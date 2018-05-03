@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <EaDesign_CustomerGroup>
+            <version>1.0.4</version>
+        </EaDesign_CustomerGroup>
+    </modules>
+    <global>        
+        <helpers>
+            <eadesign_customergroup>
+                <class>EaDesign_CustomerGroup_Helper</class>
+            </eadesign_customergroup>
+        </helpers>
+        <models>
+            <eadesign_customergroup>
+                <class>EaDesign_CustomerGroup_Model</class>
+            </eadesign_customergroup>
+        </models>
+        <events>
+            <sales_order_invoice_save_after>
+                <observers>
+                    <eadesign_customergroupi>
+                        <type>model</type>
+                        <class>eadesign_customergroup/InvoiceObserver</class>
+                        <method>changeCustomerGroupInvoice</method>
+                    </eadesign_customergroupi>
+                </observers>
+            </sales_order_invoice_save_after>
+            
+            <sales_order_creditmemo_save_after>
+                <observers>
+                    <eadesign_customergroupc>
+                        <type>model</type>
+                        <class>eadesign_customergroup/CreditMemoObserver</class>
+                        <method>changeCustomerGroupCreditMemo</method>
+                    </eadesign_customergroupc>
+                </observers>
+            </sales_order_creditmemo_save_after>
+        </events>
+        <resources>
+            <eadesign_customergroup_setup>
+                <setup>
+                    <module>EaDesign_CustomerGroup</module>
+                    <class>Mage_Customer_Model_Resource_Setup</class>
+                </setup>
+            </eadesign_customergroup_setup>
+        </resources>
+        <template>
+            <email>
+                <eadesigncustomergroup_email_config_email_template_sent_to_customer translate="label" module="eadesigncustomergroup">
+                    <label>Email template sent to customer</label>
+                    <file>eadesigncustomergroup/email-to-customer.html</file>
+                    <type>html</type>
+                </eadesigncustomergroup_email_config_email_template_sent_to_customer>
+                <eadesigncustomergroup_email_config_email_template_sent_to_admin translate="label" module="eadesigncustomergroup">
+                    <label>Email template sent to admin</label>
+                    <file>eadesigncustomergroup/email-to-admin.html</file>
+                    <type>html</type>
+                </eadesigncustomergroup_email_config_email_template_sent_to_admin>
+            </email>
+        </template>        
+    </global>
+    <adminhtml>
+        <events>
+            <adminhtml_customer_prepare_save>
+                <observers>
+                    <eadesign_customer_groupadmin>
+                        <type>model</type>
+                        <class>eadesign_customergroup/AdminCustomerObeserver</class>
+                        <method>saveTheGroupSetting</method>
+                    </eadesign_customer_groupadmin>
+                </observers>
+            </adminhtml_customer_prepare_save>
+        </events>
+    </adminhtml>
+    <adminhtml>
+        <translate>
+            <modules>
+                <EaDesign_CustomerGroup>
+                    <files>
+                        <default>EaDesign_CustomerGroup.csv</default>
+                    </files>
+                </EaDesign_CustomerGroup>
+            </modules>
+        </translate>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <customergroupstwitch_optiones>
+                                            <title>EA Design Optiones</title>
+                                        </customergroupstwitch_optiones>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

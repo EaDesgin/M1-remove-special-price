@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <customergroupconfig translate="label" module="eadesign_customergroup"> <!--No activity just name - It has to be unique-->
+            <label>Ea Design Modules Config</label>
+            <sort_order>999</sort_order>
+        </customergroupconfig>
+    </tabs>
+
+    <sections>
+        <customergroupstwitch_optiones translate="label" module="eadesign_customergroup"> <!--Sections meniu stanga activ cu click-->
+            <label>EA Auto Customer Groups</label>
+            <tab>customergroupconfig</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <auttog translate="label">
+                    <label>The group auto switch on sales complition</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <!--The client group settings-->
+                        <eadesign_autog translate="label">
+                            <label>Select group to autotransfer</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>eadesign_customergroup/source_config</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_autog>
+                        <eadesign_autogtext translate="label comment">
+                            <label>Total bought</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>validate-not-negative-number</validate> <!--De adaugat validari si aici si php-->
+                            <comment>
+                                <![CDATA[Migrate the user to this customer group after he reached total of. ]]>
+                            </comment>
+                        </eadesign_autogtext>
+                        <!--The client group settings-->
+                        
+                        <!--The client group settings-->
+                        <eadesign_autog1 translate="label">
+                            <label>Select group to autotransfer</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>eadesign_customergroup/source_config</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_autog1>
+                        <eadesign_autogtext1 translate="label comment">
+                            <label>Total bought</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Migrate the user to this customer group after he reached total of. ]]>
+                            </comment>
+                        </eadesign_autogtext1>
+                        <!--The client group settings-->
+                        
+                        <!--The client group settings-->
+                        <eadesign_autog2 translate="label">
+                            <label>Select group to autotransfer</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>eadesign_customergroup/source_config</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_autog2>
+                        <eadesign_autogtext2 translate="label comment">
+                            <label>Total bought</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Migrate the user to this customer group after he reached total of. ]]>
+                            </comment>
+                        </eadesign_autogtext2>
+                        <!--The client group settings-->
+                        
+                        <!--The client group settings-->
+                        <eadesign_autog3 translate="label">
+                            <label>Select group to autotransfer</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>eadesign_customergroup/source_config</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_autog3>
+                        <eadesign_autogtext3 translate="label comment">
+                            <label>Total bought</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Migrate the user to this customer group after he reached total of. ]]>
+                            </comment>
+                        </eadesign_autogtext3>
+                        <!--The client group settings-->
+                        
+                        <!--The client group settings-->
+                        <eadesign_autog4 translate="label">
+                            <label>Select group to autotransfer</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>eadesign_customergroup/source_config</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_autog4>
+                        <eadesign_autogtext4 translate="label comment">
+                            <label>Total bought</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Migrate the user to this customer group after he reached total of. ]]>
+                            </comment>
+                        </eadesign_autogtext4>
+                        <!--The client group settings-->
+                        
+                    </fields>
+                </auttog>
+                <autenable translate="label">
+                    <label>Enable the auto move users system</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <!--The client group settings-->
+                        <eadesign_autoge translate="label comment">
+                            <label>Enable the system</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>eadesign_customergroup/source_enable</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Enable the system - chouse enable]]>
+                            </comment>
+                        </eadesign_autoge>
+                    </fields>
+                </autenable>
+            </groups>
+        </customergroupstwitch_optiones>
+    </sections>
+</config>

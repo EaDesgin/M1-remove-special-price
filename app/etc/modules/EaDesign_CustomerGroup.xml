@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <EaDesign_CustomerGroup>
+            <active>true</active>
+            <codePool>local</codePool>
+        </EaDesign_CustomerGroup>
+    </modules>
+</config>

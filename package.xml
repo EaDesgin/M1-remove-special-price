@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>EaDesign_CustomerGroup</name>
+    <version>1.0.4</version>
+    <stability>beta</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Extension license name (OSL v3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>You will be able to enable auto customer move to another group based on lifetime sales for this customer.</summary>
+    <description>The extension will allow you to move the customers to specified groups based on lifetime sales.</description>
+    <notes>The extension was tested and retested but caution just to be safe please do a test first.</notes>
+    <authors><author><name>EaDesign</name><user>eadesign</user><email>office@eadesign.ro</email></author></authors>
+    <date>2013-02-13</date>
+    <time>12:03:41</time>
+    <contents><target name="magelocal"><dir name="EaDesign"><dir name="CustomerGroup"><dir name="Helper"><file name="Data.php" hash="a75b2e8dd0fbf81f0de68205edd24729"/></dir><dir name="Model"><file name="AdminCustomerObeserver.php" hash="fd444ae93b164a499e2eb5598e1c01ac"/><file name="CreditMemoObserver.php" hash="a75ee42d2e80df86c0b40027f034ebe5"/><file name="InvoiceObserver.php" hash="e159916c41ae8ef18fd0981aebaf987a"/><dir name="Source"><file name="Config.php" hash="9cb7683fd55fddba181e1c264149caec"/><file name="Enable.php" hash="ef6f6550baef1b7db514767998f01ef2"/></dir></dir><dir name="etc"><file name="config.xml" hash="e082c30dd7ae9703d898366286105367"/><file name="system.xml" hash="b419c55b6b9a5d9fd1e919f973306844"/></dir><dir name="sql"><dir name="eadesign_customergroup_setup"><file name="mysql4-install-1.0.1.php" hash="52e52589cfb1010354b09942e23e6506"/><file name="mysql4-upgrade-1.0.1-1.0.4.php" hash="d617cbf32a042c87edaf5d0bd48ef184"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="EaDesign_CustomerGroup.csv" hash="0d7c11aa22fd677bd625dcd7e5ec0d62"/><dir name="template"><dir name="email"><dir name="eadesigncustomergroup"><file name="email-to-admin.html" hash="f0dc4f574e1be798c62138301ee42698"/><file name="email-to-customer.html" hash="6bc9453a5964aef0ae44f9d2fa02d9f1"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="EaDesign_CustomerGroup.xml" hash="d7c494409f9103dc79cc37d27b23b8e3"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.4.0</max></php></required></dependencies>
+</package>
