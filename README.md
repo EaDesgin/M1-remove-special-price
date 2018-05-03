@@ -1,2 +1,2 @@
 # Magento 1 Remove Special Price
-With this extension you can remove special price added for each product.
+You can choose a few client groups to remove the special prices added in the product area. The product special price can be a bad thing when you are working with client groups and cart discounts. With this extension you can remove the special price for a certain client group. You need to go to Configuration->System-> EA DESIGN MODULES CONFIG and choose client groups.
